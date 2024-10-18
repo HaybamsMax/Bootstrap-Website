@@ -1,0 +1,106 @@
+  /* Hero section with background image */
+    .hero {
+  position: relative;
+  background-image: url('./dev.webp'); /* Use the correct image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+  z-index: 1; /* Places the overlay beneath the content */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* Ensures the content is above the overlay */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff; /* Adjust the color to ensure it stands out */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  color: #007bff; /* Blue text */
+}
+
+    /* Custom button styles */
+    .btn-secondary {
+      background-color: #6c757d;
+      /* border: none; */
+      transition: background-color 0.3s ease;
+      
+    }
+
+    .btn-secondary:hover {
+      background-color: blue;
+    }
+
+    /* Navbar styling */
+    .navbar {
+      background-color: #343a40;
+    }
+
+    .navbar-nav .nav-link {
+      font-family: 'Arial', sans-serif;
+      transition: color 0.3s ease;
+      font-size: 20px;
+    
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: blue;
+    }
+
+    /* Jumbotron customization */
+    .jumbotron {
+      background-color: #f8f9fa;
+      color: #343a40;
+      font-size: 25px;
+    }
+
+    .jumbotron h1 {
+      font-family: 'Verdana', sans-serif;
+    }
+
+    /* Footer styles */
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 25px;
+    }
+
+    .footer .list-inline-item a {
+      color: white;
+      transition: color 0.3s ease;
+    }
+
+    
+   .footer .fa-brands {
+  font-size: 1.75rem; /* Increase icon size */
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer .fa-brands:hover {
+  transform: scale(1.2); /* Slightly enlarge on hover */
+  color: #007bff; /* Change color on hover if needed */
+}
+
+ 
